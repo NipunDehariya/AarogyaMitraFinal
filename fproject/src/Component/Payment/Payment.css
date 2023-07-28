@@ -1,0 +1,58 @@
+.my_input {
+  text-align: center;
+  display: inline-flex;
+  margin: 50px 50px 50px 50px;
+  top: 50px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #246d03;
+  background-color: #fff;
+
+  border: 1px solid #ced4da;
+
+  transition: border-color .15s;
+}
+
+.rccs__card--front {
+  margin-top: 20px;
+}
+#my-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#my-button.clicked {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.clicked {
+  background-color: green;
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

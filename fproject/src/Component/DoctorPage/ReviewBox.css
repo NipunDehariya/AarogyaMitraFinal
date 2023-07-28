@@ -1,0 +1,113 @@
+/* .review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .review-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  .review-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+  }
+  
+  .review-box h2 {
+    margin-top: 0;
+  }
+  
+  .star-rating {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+  
+  .star-rating label {
+    color: #ddd;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label,
+  .star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+  }
+  
+  .star-rating input[type="radio"]:checked ~ label,
+  .star-rating input[type="radio"]:checked ~ label ~ label {
+    color: #ff0;
+  }
+   */
+
+
+
+   .review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  .review-form h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .review-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .review-form label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .review-form textarea {
+    height: 100px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px
+  }  

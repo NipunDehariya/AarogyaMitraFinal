@@ -1,0 +1,246 @@
+/* .payment-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .payment-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-page input[type="radio"] {
+    margin-bottom: 10px;
+  }
+  
+  .payment-page button {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .payment-page button:hover {
+    background-color: #0d47a1;
+  }
+  
+  .verification-code {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .verification-code h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .verification-code p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2196f3;
+  } */
+
+  /* .payment-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .payment-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .payment-form label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .payment-form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .card-image-container {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-image-container-1 {
+    margin-right: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .payment-form label {
+      width: 100%;
+    }
+  
+    .card-image-container {
+      width: 100%;
+    }
+  
+    .card-image-container-1 {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  } */
+  
+  /* .payment-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .payment-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .payment-form label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .payment-form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .card-image-container {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-image-container-1 {
+    margin-right: 20px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .buttons-container button {
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .payment-form label {
+      width: 100%;
+    }
+  
+    .card-image-container {
+      width: 100%;
+    }
+  
+    .card-image-container-1 {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+   */
+
+
+   .payment-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .payment-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .payment-form label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .payment-form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .card-image-container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cash-image-container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cash-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .buttons-container button {
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .payment-form label {
+      width: 100%;
+    }
+  
+    .card-image-container {
+      width: 100%;
+    }
+  
+    .cash-image-container {
+      width: 100%;
+    }
+  }
+  
