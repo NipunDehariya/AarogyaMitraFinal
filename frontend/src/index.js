@@ -8,7 +8,9 @@ import 'skitter-slider/dist/skitter.css';
 import 'skitter-slider/dist/jquery.skitter.js';
 // import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import './index.css';
+// import './index.css';
+import './assets/styles/index.css';
+
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
