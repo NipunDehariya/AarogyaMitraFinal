@@ -19,9 +19,9 @@ This is a MERN (MongoDB, Express.js, React.js, Node.js) telehealth site. It allo
 To install and run the project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/yourusername/telehealth-site.git`
-2. Navigate to the project directory: `cd telehealth-site`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
+2. Navigate to the project directory: `cd AarogyaMitra`
+3. Install the dependencies (inside both frontend and server): `npm install`
+4. Start the development server(both): `npm start`
 
 ## Usage
 
