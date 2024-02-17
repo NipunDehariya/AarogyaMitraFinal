@@ -10,8 +10,8 @@ mongoose.set('strictQuery', true);
 dotenv.config()
 module.exports.dbConnection=   ()=>{
     mongoose.connect(process.env.CONNECTION_STRING).then(()=>{
-        console.log('db connection')
+        console.log('db connection successful')
     }).catch((err)=>{
-        console.log(err);
+        console.log(err, 'db connection failed');
     })
 } 

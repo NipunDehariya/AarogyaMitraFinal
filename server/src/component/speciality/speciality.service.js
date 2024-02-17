@@ -1,4 +1,4 @@
-const AppError = require("../../utils/appError");
+const AppError = require("../../utils/AppError");
 const { catchAsyncError } = require("../../utils/catchAsync");
 const SpecialityModel=require("./speciality.model");
 const slugify=require('slugify');

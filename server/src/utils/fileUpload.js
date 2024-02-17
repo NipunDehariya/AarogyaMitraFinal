@@ -1,5 +1,5 @@
 const multer  = require('multer');
-const AppError = require('./appError');
+const AppError = require('./AppError');
 
 
 exports.uploadSingleFile=(fieldName,folderName)=>{

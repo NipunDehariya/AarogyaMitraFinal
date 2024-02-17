@@ -17,7 +17,6 @@ const schema=Schema({
     image:String,
 
 },{timestamps:true})
-//بفتح صوره من غير ماتتحفظ فالداتا بيز
 schema.post('init',(doc)=>{
     doc.image="http://localhost:3000/speciality/"+doc.image;
   })

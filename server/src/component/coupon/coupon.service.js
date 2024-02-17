@@ -1,4 +1,4 @@
-const AppError = require("../../utils/appError");
+const AppError = require("../../utils/AppError");
 const { catchAsyncError } = require("../../utils/catchAsync");
 const couponModel=require("./coupon.model");
 const factory = require('../Handlers/handler.factor');

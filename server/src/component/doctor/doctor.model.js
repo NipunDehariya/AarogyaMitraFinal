@@ -60,7 +60,7 @@ const schema = Schema({
   toObject: { virtuals: true },
 })
 
-//فيلد وهمي بضيفه للدكتور ومش بيتخزن فالداتا بيز
+// A dummy field added to the doctor but not stored in the database.
 schema.virtual("reviews", {
   ref: "review",
   localField: "_id",
