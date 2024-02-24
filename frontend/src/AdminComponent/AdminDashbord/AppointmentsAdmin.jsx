@@ -8,8 +8,8 @@ export default function AppointmentsAdmin() {
       <div className="sidebar bg-danger">
         <div className="logo-details">
           <i classname="fa-solid fa-heart fa-beat fa-2x m-3 heart " />
-          <span className="logo_name">
-            Pulse <br />
+          <span className="logo.png">
+            Aarogya Mitra<br />
             <span
               style={{ color: "rgb(250, 250, 100)", fontSize: 13, fontWeight: 100 }}
             >
@@ -35,7 +35,7 @@ export default function AppointmentsAdmin() {
           <li>
             <Link to='/PatientAdmin'>
               <i className="fa-regular fa-user"></i>
-              <span className="links_name">My patiant</span>
+              <span className="links_name">My patient</span>
             </Link>
           </li>
           <li>
@@ -57,7 +57,7 @@ export default function AppointmentsAdmin() {
       <section className="home-section">
         <nav>
           <div>
-            <p>Welcome, Dr.Ahmed</p>
+            <p>Welcome, Dr.Shubham Rawat</p>
           </div>
           <form>
             <label for="search-input">Search:</label>
@@ -65,7 +65,7 @@ export default function AppointmentsAdmin() {
             <button type="submit">Search</button>
           </form>
           <div className="profile-details">
-            <span className="admin_name">Prem Shahi</span>
+            <span className="admin_name">Satvik Shrivastava</span>
             <i className="bx bx-chevron-down" />
           </div>
         </nav>

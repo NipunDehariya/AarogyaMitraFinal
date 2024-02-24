@@ -11,6 +11,8 @@ import Registration from './Component/Registration/Registration.jsx';
 import Notfound from './Component/Notfound/Notfound';
 import Features from './Component/Features/Features.jsx';
 import Contact from './Component/Contactus/Contact';
+import Maps from './Component/components/Maps/MapExample.js';
+import Chat from './Component/chat/Chat.js';
 
 import Payment from './Component/Payment/Payment';
 import Specialties from './Component/Specialties/Specialties';
@@ -44,6 +46,9 @@ import SignupAdmin from './AdminComponent/AdminDashbord/SignupAdmin.jsx';
 import TheTableOfOnlineMeeting from './Component/OnlinMeeting/TheTableOfOnlineMeeting';
 import DoctorPageOnline from './Component/DoctorPageOnilen/DoctorPageOnline';
 import AbdelrahmanOnline from './Component/DoctorPageOnilen/AbdelrahmanOnline';
+import Nakul from './Component/DoctorPageOnilen/Nakul.jsx';
+import Anjali from './Component/DoctorPageOnilen/Anjali.jsx';
+import Arvind from './Component/DoctorPageOnilen/Arvind.jsx';
 import OmarOnline from './Component/DoctorPageOnilen/OmarOnline';
 import HallaOnline from './Component/DoctorPageOnilen/HallaOnline';
 import AkramOnline from './Component/DoctorPageOnilen/AkramOnline';
@@ -110,6 +115,8 @@ export default function App() {
         {path: 'History' , element:<History/>},
         { path: '', element: <Home /> },
         { path: 'Home', element: <Home /> },
+        { path: 'Maps', element: <Maps /> },
+        { path: 'Chat', element: <Chat /> },
         { path: 'Login', element: <Login logVer={getLoggedInUser} /> },
         { path: 'Registration', element: <Registration /> },
         { path: 'Features', element: <Features /> },
@@ -134,6 +141,11 @@ export default function App() {
         { path: 'Meeting', element: <OnlineMeeting /> },
         { path: '*', element: <Notfound /> },
         { path: 'DoctorPageOnline', element: <DoctorPageOnline /> },
+        
+        { path: 'Nakul', element: <Nakul /> },
+        { path: 'Anjali', element: <Anjali /> },
+        { path: 'Arvind', element: <Arvind /> },
+
         { path: 'AbdelrahmanOnline', element: <AbdelrahmanOnline /> },
         { path: 'OmarOnline', element: <OmarOnline /> },
         { path: 'HallaOnline', element: <HallaOnline /> },
@@ -142,7 +154,6 @@ export default function App() {
         { path: "PaymentOnline", element: <PaymentOnline /> },
         { path: "PatientForm", element: <PatientForm /> },
         { path: 'VCodeOnline', element: <Vcodeonline /> }
-
       ]
     },
     { path: 'LoginAsDocotr', element: <LoginAsdoctor /> },

@@ -1,130 +1,129 @@
-import React, {useState } from 'react'
- import Joi from 'joi'
+import React from "react";
+import Joi from 'joi'
 import { Link } from 'react-router-dom';
 import './Reg.css'
  import axios from 'axios';
  import { useNavigate } from "react-router-dom";
+export default function Register(){
+  return (
+    <>
+      <div className="container mx-auto px-4 h-full">
+        <div className="flex content-center items-center justify-center h-full">
+          <div className="w-full lg:w-6/12 px-4">
+            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
+              <div className="rounded-t mb-0 px-6 py-6">
+                <div className="text-center mb-3">
+                  <h6 className="text-blueGray-500 text-sm font-bold">
+                    Sign up with
+                  </h6>
+                </div>
+                <div className="btn-wrapper text-center">
+                  <button
+                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    {/* <img */}
+                      {/* alt="..." */}
+                      {/* className="w-5 mr-1" */}
+                      {/* src={require("assets/styles/img/github.svg").default} */}
+                    {/* /> */}
+                    Github
+                  </button>
+                  <button
+                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    {/* <img */}
+                    {/* //   alt="..." */}
+                      {/* className="w-5 mr-1" */}
+                      {/* src={require("assets/styles/img/google.svg").default} */}
+                    {/* /> */}
+                    Google
+                  </button>
+                </div>
+                <hr className="mt-6 border-b-1 border-blueGray-300" />
+              </div>
+              <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
+                <div className="text-blueGray-400 text-center mb-3 font-bold">
+                  <small>Or sign up with credentials</small>
+                </div>
+                <form>
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="email"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Name"
+                    />
+                  </div>
 
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Email"
+                    />
+                  </div>
 
-export default function Registration() {
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Password"
+                    />
+                  </div>
 
- let navigate = useNavigate();
- const [joiErrors, setJoiErrors] = useState(null)
-const [error, setError] = useState('');
-const [isloading, setIsloading] = useState(false)
- const [user, setUser] = useState({
-    userName: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    age: 0,
-    password: '',
-    Cpassword:'',
-    phone: '',
+                  <div>
+                    <label className="inline-flex items-center cursor-pointer">
+                      <input
+                        id="customCheckLogin"
+                        type="checkbox"
+                        className="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
+                      />
+                      <span className="ml-2 text-sm font-semibold text-blueGray-600">
+                        I agree with the{" "}
+                        <a
+                          href="#pablo"
+                          className="text-lightBlue-500"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Privacy Policy
+                        </a>
+                      </span>
+                    </label>
+                  </div>
 
- });
-
- function getUserData (e) {
-
-  let myUser = {...user}
- 
-  myUser[e.target.name]= e.target.value;
-  setUser(myUser);
-  
- }
- function submitRegisterForm (e) {
-  setIsloading(true)
-  e.preventDefault();
-  const schema = Joi.object({
-    userName: Joi.string().alphanum().min(3).max(25).required(),
-    firstName: Joi.string().alphanum().min(3).max(25).required(),
-    lastName: Joi.string().alphanum().min(3).max(25).required(),
-    email: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }).required(),
-    age: Joi.number().min(18).max(80).required(),
-    password: Joi.string().required(),
-    Cpassword: Joi.ref('password'),
-    phone: Joi.number().required()
-  })
-  let JoiRespons = schema.validate(user, { abortEarly: false })
-
-  if (JoiRespons.error === undefined) {
-    sendData()
-
-  } else {
-
-    setJoiErrors(JoiRespons.error.details)
-  }
-}
-
- async function sendData () {
-
-  let {data} = await axios.post(`http://localhost:5000/api/v1/users/signUp`, user);
-
-  if (data.message === 'success') {
-    navigate('/Login')
-
-   setIsloading(false)
-   
-    
-  }else{
-
-   setIsloading(false)
-    setError(data.message)
-  }
-  console.log(data)
- }
-
-
-
-
-  return <>
-    <div className='w-50 m-auto py-3'>
-    {joiErrors == null ? "" : joiErrors.map((err) => <div className='alert alert-danger'>{err.message}</div>)}
-    {error.length > 0 ? <div className='alert alert-danger my-2'>{error}</div> : ''}
-     
-      <form onSubmit={submitRegisterForm} >
-        <h2 className='mb-4'> Registration  </h2>
-        <label htmlFor="userName">User name</label>
-        <input  onChange={getUserData} type="text" name='userName' id='userName' className='form-control' placeholder='User name' />
-
-        <label htmlFor="firstName">First name</label>
-        <input  onChange={getUserData} type="text" name='firstName' id='firstName' className='form-control' placeholder='First name' />
-
-        <label htmlFor="lastName">Last name</label>
-        <input  onChange={getUserData}  type="text" name='lastName' id='lastName' className='form-control' placeholder='Last name' />
-
-        <label htmlFor="age">Age</label>
-        <input onChange={getUserData} type="number" name='age' id='age' className='form-control' placeholder='Age' />
-
-        <label htmlFor="email">E-mail</label>
-        <input onChange={getUserData} type="email" name='email' id='email' className='form-control' placeholder='E-mail' />
-
-        <label htmlFor="password">Password</label>
-        <input  onChange={getUserData} type="password" name='password' id='password' className='form-control' placeholder='Password' />
-        
-        <label htmlFor="password">Confirm password</label>
-        <input  onChange={getUserData} type="password" name='Cpassword' id='Cpassword' className='form-control' placeholder='Confirm password' />
-
-
-       
-        <label htmlFor="phone">Phone</label>
-        <input onChange={getUserData} type="number" name='phone' id='phone' className='form-control' placeholder='Phone' />
-       
-
-        <button type='submit' className='btn btn-outline-danger mt-3 d-grid gap-2 col-6 mx-auto my-3 '>
-          {isloading === true ? <i className="fa-solid fa-spinner fa-spin"></i> : "Registration" }
-           </button>
-      </form>
-         
-    </div>
-      <div>
-    
-    <Link to = '/doctor'>  
-    <button className='btn btn-outline-success mt-3 d-grid gap-2 mx-auto my-3'>
-     Registration As a Doctor
-     </button> </Link>
-    
-
+                  <div className="text-center mt-6">
+                    <button
+                      className="bg-blue-600 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                      Create Account
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </>
+    </>
+  );
 }

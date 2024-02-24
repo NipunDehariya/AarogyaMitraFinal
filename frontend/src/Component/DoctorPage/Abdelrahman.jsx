@@ -102,10 +102,9 @@ export default function Abdelrahman() {
         <img src="37.jpeg" alt="Doctor photo" />
 
         <div className="doctor-details">
-          <h2>Dr. Abdelrahman khaled</h2>
-          <p>Specialty: Cardiology</p>
-          <p>Location: Cairo, Heliopolis, El Nozha</p>
-          <p>Price: $300 per session</p>
+          <h2>Dr.Vikrant Shrivastava</h2>
+          <p>Specialty: Psychiatrist</p>
+          <p>Location: arera colony, Bhopal, MP, India</p>
         </div>
       </div>
       <div>
@@ -181,7 +180,7 @@ export default function Abdelrahman() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Omar hossam</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Abhishek Nagar</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
@@ -223,7 +222,7 @@ export default function Abdelrahman() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Samar hany</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Samay raina</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
@@ -244,7 +243,7 @@ export default function Abdelrahman() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Mahmoud Akram</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>samra iqbal</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />

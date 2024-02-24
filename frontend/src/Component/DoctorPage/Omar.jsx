@@ -78,10 +78,9 @@ export default function Omar() {
         <img src="omar.jpg" alt="Doctor photo" />
 
         <div className="doctor-details">
-          <h2>Dr.Omar Hossam</h2>
-          <p>Specialty: Cardiology</p>
-          <p>Location: Cairo, Heliopolis, El Nozha</p>
-          <p>Price: $300 per session</p>
+          <h2>Dr.Satish Tripathi</h2>
+          <p>Specialty: Oncologist </p>
+          <p>Location: Anand Vihar</p>
         </div>
       </div>
       <table>

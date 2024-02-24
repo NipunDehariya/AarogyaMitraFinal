@@ -76,10 +76,9 @@ export default function Akram() {
         <img src="Me.jpg" alt="Doctor photo" />
 
         <div className="doctor-details">
-          <h2>Dr. Mahmoud Akram</h2>
-          <p>Specialty: Cardiology</p>
-          <p>Location: Cairo, Heliopolis, El Nozha</p>
-          <p>Price: $300 per session</p>
+          <h2>Dr.Sarthak Jain</h2>
+          <p>Specialty: neurologist</p>
+          <p>Location: Kohefiza, bhopal, India</p>
         </div>
       </div>
       <table>
@@ -135,7 +134,7 @@ export default function Akram() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Omar hossam</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>aamir khan</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
@@ -156,7 +155,7 @@ export default function Akram() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Halla Sayed</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>sarthak rana</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
@@ -177,7 +176,7 @@ export default function Akram() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Samar hany</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>rohan yadav</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />

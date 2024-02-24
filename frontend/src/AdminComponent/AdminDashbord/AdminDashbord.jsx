@@ -168,7 +168,7 @@ export default function AdminDashbord() {
     <div className="logo-details">
       <i classname="fa-solid fa-heart fa-beat fa-2x m-3 heart " />
       <span className="logo_name">
-        Pulse <br />
+        Aarogya Mitra<br />
         <span
           style={{ color: "rgb(250, 250, 100)", fontSize: 13, fontWeight: 100 }}
         >
@@ -194,7 +194,7 @@ export default function AdminDashbord() {
       <li>
         <Link to='/PatientAdmin'>
         <i className="fa-regular fa-user"></i>
-          <span className="links_name">My patiant</span>
+          <span className="links_name">My patient</span>
         </Link>
       </li>
       <li>
@@ -239,7 +239,7 @@ export default function AdminDashbord() {
         </div>
         <div className="box bg-info">
           <div className="right-side">
-            <div className="box-topic">Total Patiant</div>
+            <div className="box-topic">Total Patient</div>
             <div className="number">600</div>
             <div className="indicator"></div>
           </div>

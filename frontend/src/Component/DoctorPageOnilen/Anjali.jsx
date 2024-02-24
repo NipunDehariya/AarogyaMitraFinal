@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 
 import { Link } from 'react-router-dom';
-export default function Abdelrahman() {
+export default function HallaOnline() {
   const [timeSlots, setTimeSlots] = useState([
     { time: '9:00 AM', available: true },
     { time: '10:00 AM', available: true },
@@ -75,13 +75,13 @@ export default function Abdelrahman() {
     <div className="container">
       <h1>Doctor Reservation Form</h1>
       <div className="doctor-info">
-        <img src="samar.jpg" alt="Doctor photo" />
+        <img src="doc2.jpg" alt='hellodoc'/>
 
         <div className="doctor-details">
-          <h2>Dr. Samar khan</h2>
-          <p>Specialty: Yoga Instructor</p>
-          <p>Location: Mata MAndir rd.</p>
-        
+          <h2>Dr. Anjali Arora</h2>
+          <p>Professional Psychologist</p>
+          <p>Location: Brajendra Nagar, Indore, MP</p>
+          <p>Price: ₹800 per session</p>
         </div>
       </div>
       <table>
@@ -104,13 +104,16 @@ export default function Abdelrahman() {
           ))}
         </tbody>
       </table>
+      <Link to='/PaymentOnline'>
+        <button className='btn btn-outline-danger mt-3 d-grid gap-2 col-6 mx-auto my-3' >Book a slot</button>
+      </Link>
       <div>
       </div>
-      <div>
-      <form className='form-check-inline form-control m-5 mb-4  ' onSubmit={handleSubmit}>
-        <label className='form-control my-3'>
+      <div  className='reviewform'>
+      <form className='form-check-inline form-control m-4' onSubmit={handleSubmit}>
+        <label className='form-control my-3 mb-3'>
           Review:
-          <input type="text" value={review} onChange={(e) => setReview(e.target.value)} />
+          <input className="input-field"type="text" value={review} onChange={(e) => setReview(e.target.value)} />
         </label>
         <label className='form-control my-3'> 
           Rating:
@@ -118,6 +121,7 @@ export default function Abdelrahman() {
         </label>
         <button  className='btn btn-outline-success mt-3 d-grid gap-2 col-6 mx-auto my-3 '  type="submit">{editingIndex !== null ? 'Save' : 'Add'}</button>
       </form>
+      
       <div>
         {reviews.map((review, index) => (
           <div key={index}>
@@ -129,6 +133,7 @@ export default function Abdelrahman() {
         ))}
       </div>
     </div>
+    <br></br>
     <div>
     <div className="Review">
         <span
@@ -137,19 +142,17 @@ export default function Abdelrahman() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Omar hossam</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Sabiha Khan</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
           <span className="fa fa-star" />
           <span className="fa fa-star" />
-          <span style={{ fontSize: 13 }}>8 March,2023</span>
+          <span style={{ fontSize: 13 }}>8 March,2024</span>
         </div>
         <br />
-        The Doctor is very sweat talking and know how to Make the patient
-        comfortable to talk about his manner , and there wasn't no waiting time or
-        delay from the doctor himself.
+        AarogyaMitra has been a lifesaver for me. I was going through a tough time in my personal and professional life, and I felt hopeless and alone. I'm very grateful for this service.
       </div>
       <div className="Review">
         <span
@@ -158,68 +161,22 @@ export default function Abdelrahman() {
         >
           
         </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Halla Sayed</h5>
+        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Rohan Sharma</h5>
         <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
           <span className="fa fa-star" />
           <span className="fa fa-star" />
-          <span style={{ fontSize: 13 }}>8 March,2023</span>
+          <span style={{ fontSize: 13 }}>8 March,2024</span>
         </div>
         <br />
-        The Doctor is very sweat talking and know how to Make the patient
-        comfortable to talk about his manner , and there wasn't no waiting time or
-        delay from the doctor himself.
-      </div>
-      <div className="Review">
-        <span
-          className="closebtn"
-          onclick="this.parentElement.style.display='none';"
-        >
-          
-        </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Samar hany</h5>
-        <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star" />
-          <span className="fa fa-star" />
-          <span style={{ fontSize: 13 }}>8 March,2023</span>
-        </div>
-        <br />
-        The Doctor is very sweat talking and know how to Make the patient
-        comfortable to talk about his manner , and there wasn't no waiting time or
-        delay from the doctor himself.
-      </div>
-      <div className="Review">
-        <span
-          className="closebtn"
-          onclick="this.parentElement.style.display='none';"
-        >
-          
-        </span>
-        <h5 style={{ fontSize: 18, fontWeight: 600 }}>Mahmoud Akram</h5>
-        <div style={{ marginTop: "-33px", marginInlineStart: 630 }}>
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star checked" />
-          <span className="fa fa-star" />
-          <span className="fa fa-star" />
-          <span style={{ fontSize: 13 }}>8 March,2023</span>
-        </div>
-        <br />
-        The Doctor is very sweat talking and know how to Make the patient
-        comfortable to talk about his manner , and there wasn't no waiting time or
+        The Doctor is very sweet talking and know how to Make the patient
+        comfortable to talk about his manner, and there wasn't no waiting time or
         delay from the doctor himself.
       </div>
     </div>
 
-
-      <Link to='/PaymentPage'>
-        <button className='btn btn-outline-danger mt-3 d-grid gap-2 col-6 mx-auto my-3' >to confirm your reservation</button>
-      </Link>
     </div>
   </>
 }

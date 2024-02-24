@@ -133,9 +133,8 @@ export default function Dashbord() {
  <>
   <div className="sidebar bg-danger">
     <div className="logo-details">
-    <img src="doctor logo.png" alt="" width="40" height="40"></img>
+    <img src="logo.png" alt="" width="150" height="70"></img>
       <span className="logo_name">
-        Pulse <br />
         <span
           style={{ color: "rgb(250, 250, 100)", fontSize: 13, fontWeight: 100 }}
         >
@@ -166,7 +165,7 @@ export default function Dashbord() {
       <li>
         <Link to='/patiant'>
         <i className="fa-regular fa-user"></i>
-          <span className="links_name">My patiant</span>
+          <span className="links_name">My patient</span>
         </Link>
       </li>
       <li>
@@ -178,13 +177,13 @@ export default function Dashbord() {
       <li>
         <Link to='/Setting'>
         <i class="fa-solid fa-gear"></i>
-          <span className="links_name">Setting</span>
+          <span className="links_name">Settings</span>
         </Link>
       </li>
       <li>
             <Link to='/AddHistory'>
             <i class="fa-solid fa-file-medical"></i>
-              <span className="links_name">Medical Reporte</span>
+              <span className="links_name">Medical Reports</span>
             </Link>
           </li>
       <li className="log_out">
@@ -216,7 +215,7 @@ export default function Dashbord() {
         </div>
         <div className="box bg-info">
           <div className="right-side">
-            <div className="box-topic">Total Patiant</div>
+            <div className="box-topic">Total Patient</div>
             <div className="number">600</div>
             <div className="indicator"></div>
           </div>
@@ -230,7 +229,7 @@ export default function Dashbord() {
         </div>
         <div className="box bg-success">
           <div className="right-side">
-            <div className="box-topic">Clinc Consulting</div>
+            <div className="box-topic">Clinic Consulting</div>
             <div className="number">100</div>
             <div className="indicator"></div>
           </div>

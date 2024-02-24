@@ -24,7 +24,7 @@ export default function PatientAdmin() {
         <div className="logo-details">
           <i classname="fa-solid fa-heart fa-beat fa-2x m-3 heart " />
           <span className="logo_name">
-            Pulse <br />
+            Aargoya Mitra <br />
             <span
               style={{ color: "rgb(250, 250, 100)", fontSize: 13, fontWeight: 100 }}
             >
@@ -50,7 +50,7 @@ export default function PatientAdmin() {
           <li>
             <Link to='/PatientAdmin'>
               <i className="fa-regular fa-user"></i>
-              <span className="links_name">My patiant</span>
+              <span className="links_name">My patient</span>
             </Link>
           </li>
           <li>
@@ -71,7 +71,7 @@ export default function PatientAdmin() {
       <section className="home-section">
         <nav>
         <div>
-        <p>Welcome, Dr.Ahmed</p>
+        <p>Welcome, Dr.Shubham Rawat</p>
       </div>
       <form>
   <label for="search-input">Search:</label>
@@ -79,14 +79,14 @@ export default function PatientAdmin() {
   <button type="submit">Search</button>
 </form>
           <div className="profile-details">
-            <span className="admin_name">Prem Shahi</span>
+            <span className="admin_name">Satvik Shrivastava</span>
             <i className="bx bx-chevron-down" />
           </div>
         </nav>
        <div>
        <main className="main-container py-5">
   <div className="main-title">
-    <p className="font-weight-bold">PULSE PATIENTS</p>
+    <p className="font-weight-bold">AAROGYA MITRA PATIENTS</p>
   </div>
   {allPatient!=null ?  <div>
    {allPatient.map((users , index)=>

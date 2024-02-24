@@ -36,7 +36,6 @@ export default function SignupAdmin() {
       </form>
       <div className="social-login">
         <span className="logo_name">
-          <img src="V.png" />
           Pulse <br />
           <span
             style={{

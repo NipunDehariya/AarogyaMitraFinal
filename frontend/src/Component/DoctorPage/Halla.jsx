@@ -78,10 +78,10 @@ export default function Halla() {
         <img src="Halla.jpg" alt="Doctor photo" />
 
         <div className="doctor-details">
-          <h2>Dr. Halla Sayed</h2>
+          <h2>Dr. Sameer Hamid</h2>
           <p>Specialty: Cardiology</p>
-          <p>Location: Cairo, Heliopolis, El Nozha</p>
-          <p>Price: $300 per session</p>
+          <p>Location: Chamanpuri, B-sector</p>
+          
         </div>
       </div>
       <table>

@@ -20,8 +20,8 @@ export default function DoctorsAdmin() {
      <div className="sidebar bg-danger">
         <div className="logo-details">
           <i classname="fa-solid fa-heart fa-beat fa-2x m-3 heart " />
-          <span className="logo_name">
-            Pulse <br />
+          <span className="logo.png">
+            Aarogya Mitra<br />
             <span
               style={{ color: "rgb(250, 250, 100)", fontSize: 13, fontWeight: 100 }}
             >
@@ -47,7 +47,7 @@ export default function DoctorsAdmin() {
           <li>
             <Link to='/PatientAdmin'>
               <i className="fa-regular fa-user"></i>
-              <span className="links_name">My patiant</span>
+              <span className="links_name">My patient</span>
             </Link>
           </li>
           <li>
@@ -78,7 +78,7 @@ export default function DoctorsAdmin() {
        <div>
        <main className="main-container py-5">
   <div className="main-title">
-    <p className="font-weight-bold">PULSE DOCTORS</p>
+    <p className="font-weight-bold">AAROGYA MITRA DOCTORS</p>
   </div>
    {alldoctors!=null ? <div>
    {alldoctors.map((doctors , index)=>

@@ -10,7 +10,7 @@ export default function Profile() {
       </div>
       <div>
        <Link to='/History'>
-       <button className='btn btn-outline-danger '>
+       <button className='bg-blue-600 text-white hover:shadow-md'>
         My Appointments
        </button>
        </Link>
@@ -23,7 +23,7 @@ export default function Profile() {
         </div>
         <div className="row mt-2">
           <div className="col-md-6">
-            <label className="labels">Name</label>
+            <label className="labels">First name</label>
             <input
               type="text"
               className="form-control"
@@ -32,12 +32,12 @@ export default function Profile() {
             />
           </div>
           <div className="col-md-6">
-            <label className="labels">Surname</label>
+            <label className="labels">Second name</label>
             <input
               type="text"
               className="form-control"
               defaultValue=""
-              placeholder="surname"
+              placeholder="second name"
             />
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Profile() {
             <input
               type="text"
               className="form-control"
-              placeholder="enter phone number"
+              placeholder="Mobile number"
               defaultValue=""
             />
           </div>
@@ -57,7 +57,7 @@ export default function Profile() {
             <input
               type="text"
               className="form-control"
-              placeholder="enter address "
+              placeholder="Address "
               defaultValue=""
             />
           </div>
@@ -69,7 +69,7 @@ export default function Profile() {
             <input
               type="text"
               className="form-control"
-              placeholder="enter email id"
+              placeholder="Email"
               defaultValue=""
             />
           </div>
@@ -96,7 +96,7 @@ export default function Profile() {
           </div>
         </div>
         <div className="mt-5 text-center">
-          <button className="btn btn-primary profile-button" type="button">
+          <button className="btn btn-primary profile bg-blue-600 text-white text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none border-black" type="button">
             Save Profile
           </button>
         </div>
