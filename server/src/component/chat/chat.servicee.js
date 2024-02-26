@@ -3,16 +3,14 @@
 
 const express = require('express');
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
-
-const MODEL_NAME = "gemini-pro";
-const API_KEY = "AIzaSyCOmdEvN5nyH2SiBp-6EIVEOTsIJ3VqfRw";
+const env = require("dotenv").config()
 
 
 exports.generateChat = async (req, res, next) => {
   const { message } = req.body;
   try {
-    const genAI = new GoogleGenerativeAI(API_KEY);
-    const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+    const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+    const model = genAI.getGenerativeModel({ model: process.env.MODEL_NAME});
 
     const generationConfig = {
       temperature: 0.9,
