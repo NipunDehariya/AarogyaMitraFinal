@@ -80,7 +80,7 @@ function App() {
                     if (message.sender === "user") {
                       return (
                         <Message key={i} model={message}> 
-                          <Avatar src="user.png" name="AarogyaMitra" />
+                          <Avatar src="user1.jpg" name="AarogyaMitra" />
                           <Message.Footer sentTime="just now" />
                         </Message>
                       );
