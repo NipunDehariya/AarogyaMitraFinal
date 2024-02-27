@@ -36,7 +36,7 @@ export default function Navbar(props) {
           >
           <li className="flex items-center">
                 <Link
-                    className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-lg uppercase font-bold rounded mr-2"
+                    className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-sm uppercase font-bold rounded mr-2"
                   to="/Features"
                 >
                   Features
@@ -45,7 +45,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-lg uppercase font-bold rounded ml-2"
+                  className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-sm uppercase font-bold rounded ml-2"
                   to="/Profile"
                 >
                   Profile

@@ -57,11 +57,11 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ position:"relative", height: "550px", width: "750px" }}>
+      <div style={{ position:"relative", height: "500px", width: "800px" }}>
         <MainContainer>
           <ChatContainer>   
           <ConversationHeader>
-          <Avatar src="bot.jpg" name="AarogyaMitra" />
+          <Avatar src="newprofile.jpg" name="AarogyaMitra" />
           <ConversationHeader.Content userName="AarogyaMitra" info="Online" />
           <ConversationHeader.Actions>
             {/* <VoiceCallButton />
@@ -80,14 +80,13 @@ function App() {
                     if (message.sender === "user") {
                       return (
                         <Message key={i} model={message}> 
-                          <Avatar src="user1.jpg" name="AarogyaMitra" />
                           <Message.Footer sentTime="just now" />
                         </Message>
                       );
                     } else {
                       return (
                         <Message key={i} model={message}>
-                          <Avatar src="bot.jpg" name="AarogyaMitra" status='available'/>
+                          <Avatar src="newprofile.jpg" name="AarogyaMitra" status='available'/>
                           {/* <Message.Footer sentTime="just now" /> */}
                         </Message>
                       );
